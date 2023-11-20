@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: lightseagreen;
-    color: #333;
+    background-color: #4d4f6e; /* Dark Purple */
+    color: #ffffff; /* White */
     line-height: 1.6;
 }
 
 header {
-    background-color: #42B7EB;
-    color: black;
+    background-color: #3b5998; /* Dark Blue */
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
     margin-bottom: 20px;
@@ -25,8 +25,8 @@ header h1 {
 }
 
 button {
-    background-color: #7EEDEC;
-    color: #333;
+    background-color: #55acee; /* Light Blue */
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -35,8 +35,8 @@ button {
 }
 
 button:hover {
-    background-color: #689BED;
-    color: #fff;
+    background-color: #5da0d8; /* Slightly Darker Light Blue */
+    color: #ffffff;
 }
 
 main {
@@ -51,13 +51,13 @@ main {
 }
 
 .game-list section {
-    background-color: #2b4570;
+    background-color: #7289da; /* Dark Purple */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: calc(33% - 20px);
-    color: lightseagreen;
-    position: relative; 
+    color: #ffffff; /* White */
+    position: relative;
 }
 
 .game-list section:hover {
@@ -66,15 +66,15 @@ main {
 }
 
 .game-details {
-    background-color: #4CEAB2;
+    background-color: #99aab5; /* Lighter Dark Blue */
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 .game-details ul {
-    list-style-type: none; 
-    padding-left: 0; 
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .game-details li {
@@ -82,7 +82,7 @@ main {
 }
 
 #game-form-container {
-    background-color: rgb(98, 97, 161);
+    background-color: #6f42c1; /* Darker Purple */
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
@@ -96,7 +96,7 @@ main {
 form label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #ffffff; /* White */
 }
 
 form input[type="text"],
@@ -107,18 +107,7 @@ form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
-    border: 1px solid grey;
-}
-
-/* Edit and Delete Button Styles */
-.game-list section button {
-    padding: 5px 10px;
-    margin-top: 10px;
-    font-size: 0.8em;
-}
-
-.game-list section button:first-of-type {
-    margin-right: 5px;
+    border: 1px solid #99aab5; /* Lighter Dark Blue */
 }
 
 @media (max-width: 768px) {
