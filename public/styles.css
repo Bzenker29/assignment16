@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightseagreen;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #42B7EB;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    background-color: #7EEDEC;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #689BED;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.game-list section {
+    background-color: #2b4570;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+    color: lightseagreen;
+    position: relative; 
+}
+
+.game-list section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.game-details {
+    background-color: #4CEAB2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.game-details ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.game-details li {
+    margin: 10px;
+}
+
+#game-form-container {
+    background-color: rgb(98, 97, 161);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+/* Edit and Delete Button Styles */
+.game-list section button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.game-list section button:first-of-type {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .game-list section {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .game-list section {
+        width: 100%;
+    }
+}

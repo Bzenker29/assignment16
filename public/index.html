@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Call of Duty Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Call of Duty Collection</h1>
+        <button id="add-game-button">Add Game</button>
+    </header>
+
+    <main>
+        <section id="game-list" class="game-list"></section>
+
+        <div id="game-form-container" class="hidden">
+            <h2 id="form-title">Add New Game</h2>
+            <form id="game-form" enctype="multipart/form-data">
+                <input type="hidden" name="_id" value="-1">
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" required>
+
+                <label for="mainPlatform">Main Platform:</label>
+                <input type="text" id="mainPlatform" name="mainPlatform" required>
+
+                <label for="seriesNumber">Series Number:</label>
+                <input type="number" id="seriesNumber" name="seriesNumber" required>
+
+                <label for="releaseYear">Release Year:</label>
+                <input type="number" id="releaseYear" name="releaseYear" required>
+
+                <label for="timeframe">Timeframe:</label>
+                <input type="text" id="timeframe" name="timeframe" required>
+
+                <label for="maps">Maps (separated by commas):</label>
+                <input type="text" id="maps" name="maps">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
